@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var Gentilico_1 = require("./Gentilico");
+var teclado = require("readline-sync");
+var uf = "";
+console.log("Informe a UF do seu estado");
+uf = teclado.question();
+uf = uf.toUpperCase();
+var uf1 = new Gentilico_1["default"](uf);
+console.log("Com base na sua UF, seu gentilico é " + uf1.getGentilico());
